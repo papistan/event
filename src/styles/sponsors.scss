@@ -1,0 +1,65 @@
+.sponsors-section {
+  color: #fff;
+
+  a {
+    color: #f08751;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    border-bottom: 1px solid #f08751;
+  }
+
+  .Heading-tag.Heading-tag-circle-normal {
+    text-align: center;
+    color: #f89e1c;
+    text-align: center;
+
+    &::before {
+      content: "";
+      height: 60px;
+      width: 60px;
+      position: absolute;
+      background: #95446b;
+      border-radius: 50%;
+      opacity: 0.7;
+      transform: translate3d(-61%, -50%, 0);
+      z-index: -1;
+    }
+  }
+
+  .logos-container {
+    width: 100%;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.25s ease-in-out;
+    background-color: rgb(41, 38, 84);
+    border: none;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .gatsby-image-wrapper {
+      width: 200px;
+      max-width: 100%;
+      opacity: 0.85;
+    }
+  }
+}
